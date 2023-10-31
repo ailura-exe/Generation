@@ -1,0 +1,6 @@
+vestidos
+pantalones
+camisetas
+zapatos
+abrigos
+chamarras

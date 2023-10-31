@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f1f1f;
+    color: white;
+    line-height: 1.6;
+    font-family: 'Overpass Mono', sans-serif;
+}
+
+.content 
+{
+   max-width: 1170px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 24px 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.logo{
+    text-align: center;
+    font-size: 48px;
+}
+
+.logo span{
+    color: #FF0E87;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 10px 0 rgb(255, 255, 255), 0 0 40px 0 rgba(253, 94, 182, 0.849);  
+}
+
+.contact-wrapper > *{
+    padding: 16px;
+}
+
+.contact-form{
+    background: #161616;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 16px;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 11.2px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid hotpink;
+}
+
+.contact-form form button {
+    background: #ff69b4;
+    border: 0;
+    text-transform: uppercase;
+    padding: 16px;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background-color: #FF0E87;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info{
+    background-color: black;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+li{
+    font-family: 'Overpass Mono', sans-serif;
+}
+/*Aquí empieza el responsive*/
+
+@media(min-width: 700px){
+    body {
+        padding: 0 64px;
+    }
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;  
+    }
+    .contact-wrapper >* {
+        padding: 32px;
+    }
+    .contact-info h4,
+    .contact-info p,
+    .contact-info ul{
+        text-align: left;
+    }
+}

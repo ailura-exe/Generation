@@ -1,0 +1,4 @@
+pc 1
+pc 2
+ lampara
+cuaderno
